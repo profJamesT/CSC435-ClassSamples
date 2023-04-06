@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Credit
 
 Based off code from https://www.w3schools.com/react/react_events.asp
+and https://www.w3schools.com/react/react_hooks.asp
 
 ## Available Scripts
 

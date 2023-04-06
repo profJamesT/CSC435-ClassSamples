@@ -1,4 +1,5 @@
 import './App.css';
+import {useState} from "react";
 
 function App() {
 
@@ -7,9 +8,18 @@ function App() {
     alert("Why hello there");
   }
 
+  const [color, setColor] = useState("red");
+
   return (
-      //Call the function from the onClick handler
-    <button onClick={greeting}>Greeting from an old friend</button>
+      <>
+        <button onClick={greeting}>Greeting from an old friend</button>
+        <h1>My Favorite color is {color}!</h1>
+        <button type="button" onClick={() => setColor("blue")}>Blue</button>
+        <button type="button" onClick={() => setColor("red")}>Red</button>
+        <button type="button" onClick={() => setColor("yellow")}>Yellow</button>
+        <button type="button" onClick={() => setColor("green")}>Green</button>
+      </>
+
   );
 }
 
